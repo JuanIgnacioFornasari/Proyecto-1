@@ -4,9 +4,9 @@
 
 
 body{
+    width: 100vw;
     margin: 0;
     font-family: header;
-    color: white;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -32,7 +32,7 @@ header {
 
 
 
-a{
+header a{
     text-decoration: none;
     color:rgb(238, 148, 30);
 }
@@ -65,22 +65,23 @@ a{
     justify-content: center;
     width: 100%;
     background-color: #24262b;
-    padding: auto;
     flex-wrap: wrap;
 }
 
-
-
-.container{
-    flex: 1;
+.menu{
     display: flex;
+    justify-content: center;
+    margin: 10px;
 }
+
+
 
 /* MAIN */
 
 main {
     max-height: 500vh;
     width: 100vw;
+    background-color: #f0d9b5;
     
 }
 
@@ -90,23 +91,38 @@ main {
     text-align: center;
     justify-content: center;
     color: #24262b;  
-    background-color: #FFFFFF;
-    padding: 50px;
+    background-color: #f0d9b5;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    
+}
+
+
+
+.box-precentacion{
+    position: relative;
+    display:flex;
+    color: #24262b;  
+    background-color:#24262b;
+    color: #BBBBBB;
+    width: 100%;
+    box-shadow: 0 0 10px 1px black;
+    padding: 0 0 50px 0px;
     gap: 40px;
     z-index: 10;
+    
 }
-.presentacion img{
-    width: 500px;
-    height: 300px;
+.box-precentacion img{
+    width: 1100px;
+    height: 400px;
     margin-right: 0px;
     background-size: cover; 
     background-position: center;
-    margin-left: 60px;
-    margin-top: 70px;
+    box-shadow: 1px 0 10px 3px black;
+    margin-top: 50px;
 }
 
-.presentacion p{
-  max-width: 1500px;  
+.box-precentacion p{
   font-size: 18px;                    
   line-height: 1.6;   
   font-weight: 500; 
@@ -114,18 +130,186 @@ main {
   white-space: pre-line;
   padding:  50px 20px;
   margin-right: 20px;
+  margin-top: 60px;
+}
+
+
+/* datos */
+
+
+.club-datos{
+    width: 100vw;
+    height: 80vh;
+    background-image:url(piezas.jpg);
+    background-attachment: scroll;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    align-items: center;
+    box-sizing: border-box;
+    
+    
+
+    
+}
+ .cuadros{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid beige;
+    align-items: center;
+    justify-content: center;
    
-  
+
+ }
+.cuadro{
+    width: 300px;
+    height: 300px;
+    background-color: #00000000;
+    
+}
+.cuadro h4{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cuadro p{
+    color: cornsilk;
+    margin: 10px;
+    margin-top: 30px;
+}
+.cuadro1{
+    background-color: #575b64e3;
+}
+
+.cuadro2{
+    background-color:rgba(190, 155, 89, 0.753);
+    color: #24262b;
+
+
+}
+
+.cuadro3{
+    background-color: #575b64e3;
+}
+
+
+/* Informacion */
+
+.Informacion{
+    width: 100vw;
+    height: 56vh;
+    background-image:url(Imagen\ de\ WhatsApp\ 2025-04-07\ a\ las\ 17.07.06_d474e20a.jpg);
+    background-position: bottom; 
+    background-repeat: no-repeat;  
+    background-size: cover; 
+    padding-top: 15px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    box-shadow: 0 0 10px 1px black;
+}
+
+.box-informacion{
+    display: flex;
+    position: sticky;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Informacion-Direccion{
+    width: 21.7vw;
+    height: 50vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 3px #24262b;
+    background-color: #c2a35f;
+}
+
+.Informacion-texto{
+   
+    justify-content: center;
+    align-items:center;
+}
+
+.Informacion-texto a{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    white-space: pre-line;
+    color: #212122;
+    
+    
+}   
+
+
+.Informacion-texto i{
+    color: #da0808;
+    width: 300px;
 
 }
 
 
 
+.Informacion-texto h3 {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    white-space: pre-line;
+    color: #212122;
+    
+}
 
 
 
+.Informacion-Horarios{
+    width: 21.7vw;
+    height: 50vh;
+    box-shadow: 0 0 10px 3px #24262b;
+    background-color: #c2a35f;
+    box-sizing: border-box;
+    margin-left: 15px;
+    margin-right: 30px;
+    
+}
 
 
+.Informacion-Horarios h3{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: auto;
+    text-decoration: underline;
+    color: #cbd190;
+}
+
+.Informacion-Horarios p{
+    margin-left: 40px;
+    text-align: left;
+    color: #cc5e05;
+    font-size: 20px;
+}
+
+.Informacion-Horarios h3{
+    text-align: center;
+    color: moccasin;
+    margin: 40px;
+}
+
+.Informacion-Horarios a{ 
+    color: #cc5e05;
+    margin: 21px;
+
+}
+
+.Informacion-Horarios a:hover{ 
+    color: #c07218b6;
+    border-radius: 5px;
+   
+    
+   
+    
+}
 
 
 
@@ -134,12 +318,12 @@ main {
 .footer{
     background-color: #24262b;
     padding: 0px;
-    margin:  0px;
-
+    width: 100%;
+    z-index: 10;
 }
 
 .footer-container{
-    max-width: 2px;
+    max-width: 400px;
     margin: 0 auto;
 }
 
