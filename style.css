@@ -42,8 +42,6 @@ header a{
 
 .logo-img{
     height: 280px;
-    padding: 10px;
-    
 }
 
 
@@ -68,13 +66,17 @@ header a{
     flex-wrap: wrap;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: center;
     margin: 10px;
+    
 }
 
-
+.container{
+    flex: 1;
+    display: flex;
+}
 
 /* MAIN */
 
